@@ -16,7 +16,7 @@ struct ScrumdingerApp: App {
                 ScrumsView(scrums: $store.scrums) {
                     ScrumStore.save(scrums: store.scrums) { result in
                         if case .failure(let error) = result {
-                            fatalError(error.localizedDescription`)
+                            fatalError(error.localizedDescription)
                         }
                     }
                 }
